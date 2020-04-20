@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "EuropeCond";
+	src:
+			 url("../fonts/EuropeCond_16277.ttf") format("truetype");
+			 /* url("../fonts/EuropeCond-Bold_16275.ttf") format("truetype");
+			 url("../fonts/EuropeCond-Bold-Italic_16274.ttf") format("truetype"); */
+	font-style: normal;
+	font-weight: normal;
+}
+main{
+  background: url('../../img/bg.jpg');
+  background-size: contain;
+}
+.counter-block__card-title,.main-slide__slide-inner,.main-slide__title {
+
+  font-family: 'EuropeCond', sans-serif;
+
+}
+.search_input{
+    padding: 5px;
+    border: 1px solid #000;
+    margin-left: 60px;
+    /* background: url('../../img/search.png'); */
+    background: url('../../img/search.png') left 90% top 50% / 20px no-repeat #fff;
+  }
+  .header__menu-button{
+    display: flex;
+    flex-direction:column;
+  }
+  .header__menu-button-inner{
+    margin-bottom: 10px;
+  }
+  .logo_img img{
+    width: 150px;
+  }
+  .header_is_fixed .header__container{
+    padding-top: 20px;
+  }
+  .header_is_fixed .logo{
+    width: 100px;
+  }
+  .header_is_fixed .header__container{
+    background: url('../../img/header.png');
+  }
+  .tp-rightarrow,.tp-leftarrow{
+    display: none;
+  }
+  .tp-kbimg{
+    display: none;
+  }
+  .main-slide{
+    background: rgba(75, 75, 75, 0.5);
+  }
+  .specialization-block__image img{
+    width: 111px;
+  }
+  .part_col{
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .social_col{
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+  .menu_col{
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+  .add_col{
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+  .main-slide__subtitle-wrapper{
+    margin-bottom: 10px;
+  }
+  .main-slide__title-wrapper{
+    margin-left: 7px;
+  }
+  @media(max-width:480px){
+    .logo_img img{
+      width: 100px;
+    }
+    .footer-default-txt{
+      /* display: none; */
+    }
+    .social_col, .add_col,.menu_col,.part_col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .footer_fixed{
+      position: inherit;
+    }
+    .no-mobile{
+      padding-bottom: 0 !important;
+    }
+  }
