@@ -36,11 +36,12 @@ main{
   .header_is_fixed .header__container{
     padding-top: 20px;
   }
-  .header_is_fixed .logo{
+  .header_is_fixed .logo img{
     width: 100px;
   }
   .header_is_fixed .header__container{
-    background: url('../../img/header.png');
+    background: url('../../img/header.jpg');
+    background-size: contain;
   }
   .tp-rightarrow,.tp-leftarrow{
     display: none;
