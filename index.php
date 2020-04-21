@@ -23,7 +23,7 @@
                    data-rotatestart="0"
                    data-scaleend="100"
                    data-scalestart="110"
-                   src="assets/img/1.JPG"/>
+                   src="assets/img/1.jpg"/>
               <!-- <div class="rs-background-video-layer"
                    data-aspectratio="4:3"
                    data-autoplay="true"
