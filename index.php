@@ -1,91 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'head.php';?>
-<body class="page">
-<div style="display: none">
-  <!-- svg sprite-->
-  <svg style="width:0; height:0; visibility:hidden;" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="icon_ion-icon-apps" viewBox="0 0 512 512">
-      <path d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z"/>
-    </symbol>
-  </svg>
-</div>
-<div class="page__inner animsition">
-  <header class="header header_white header_fixed ">
-    <div class="header__container">
-      <div class="header__wrapper container-fluid">
-        <div class="header__inner">
-          
-          <div class="logo_cont">
-            <a class="logo header__logo logo_img" href="/"><img src="img/logo1.png" alt=""></a>
-          </div>
-          <button class="header__menu-button" type="button">   
-            <span class="header__menu-button-inner"></span>
-            Меню
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="header__overlay"></div>
-    <div class="menu-panel header__menu">
-      <div class="menu-panel__inner">
-        <button class="header__menu-button header__menu-button_fixed" type="button">
-          <span class="header__menu-button-inner"></span>
-        </button>
-        <!-- <div class="menu-panel__locales">
-          <div class="menu-panel__locale link link link_active">En</div>
-          <div class="menu-panel__locale link">Fr</div>
-          <div class="menu-panel__locale link">De</div>
-        </div> -->
-        <div class="menu-panel__menu">
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse" href="#submenu1">Мы</a>
-            <!-- <div class="menu-panel__menu-list collapse" id="submenu1">
-              <div class="menu-panel__bottom-submenu">
-                <div class="menu-panel__submenu-item">
-                  <a class="menu-panel__submenu-link menu-panel__submenu-link menu-panel__submenu-link_active" href="index.html">Подпункт меню</a>
-                </div>
-                <div class="menu-panel__submenu-item">
-                  <a class="menu-panel__submenu-link" href="#">Подпункт меню</a>
-                </div>
-              </div>
-            </div> -->
-          </div>
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed" data-toggle="collapse" href="#submenu2">Продукт</a>
-          </div>
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="showcase.html">Витрина</a>
-          </div>
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="#submenu4">Диалог</a>
-          </div>
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="#submenu4">Контакты</a>
-          </div>
-        </div>
-        <div class="menu-panel__footer">
-          <div class="socials menu-panel__socials">
-            <a class="socials__social icofont-instagram" href="#">
-              <div class="visually-hidden">instagram</div>
-            </a>
-            <a class="socials__social icofont-facebook" href="#">
-              <div class="visually-hidden">facebook</div>
-            </a>
-          </div>
-          <div class="menu-panel__bottom">
-            <div class="menu-panel__copyright">© 2020
-              <strong>КазВторРесурс</strong>
-      Все права защищены
-            </div>
-            <!-- <div class="menu-panel__author">Design by
-              <a href="#">Logan Cee</a>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
   <main>
     <div class="main-slider">
       <div class="revolution-slider">
@@ -108,8 +23,8 @@
                    data-rotatestart="0"
                    data-scaleend="100"
                    data-scalestart="110"
-                   src="img/1.JPG"/>
-              <div class="rs-background-video-layer"
+                   src="assets/img/1.JPG"/>
+              <!-- <div class="rs-background-video-layer"
                    data-aspectratio="4:3"
                    data-autoplay="true"
                    data-autoplayonlyfirsttime="false"
@@ -121,7 +36,7 @@
                    data-videoloop="loop"
                    data-videowidth="100%"
                    data-vimeoid="404000840"
-                   data-volume="mute"></div>
+                   data-volume="mute"></div> -->
               <div class="main-slide main-slide main-slide_size_large">
                 <div class="main-slide__container container">
                   <div class="main-slide__slide-inner">
@@ -311,7 +226,7 @@
         <div class="swiper-wrapper">
           <div class="projects-block__slide-wrapper swiper-slide" data-filter="building">
             <a class="projects-block__slide" href="#">
-              <img alt="" class="projects-block__image" src="img/001.jpg"/>
+              <img alt="" class="projects-block__image" data-src="assets/img/001.jpg"/>
               <span class="projects-block__slide-content">
                 <span class="projects-block__slide-head">
                   <span class="projects-block__slide-title">Текст</span><span class="projects-block__slide-label">Приписка</span></span><span
@@ -321,21 +236,21 @@
           </div>
           <div class="projects-block__slide-wrapper swiper-slide" data-filter="interior">
             <a class="projects-block__slide" href="#">
-              <img alt="" class="projects-block__image" src="img/002.jpg"/>
+              <img alt="" class="projects-block__image" data-src="assets/img/002.jpg"/>
               <span class="projects-block__slide-content"><span class="projects-block__slide-head"><span class="projects-block__slide-title">Текст 2</span><span class="projects-block__slide-label">Приписка</span></span><span
                 class="projects-block__slide-text">Описние (превью)</span><span class="projects-block__arrow icon-arrow-right"></span></span>
             </a>
           </div>
           <div class="projects-block__slide-wrapper swiper-slide" data-filter="residence">
             <a class="projects-block__slide" href="#">
-              <img alt="" class="projects-block__image" src="img/003.jpg"/>
+              <img alt="" class="projects-block__image" data-src="assets/img/003.jpg"/>
               <span class="projects-block__slide-content"><span class="projects-block__slide-head"><span class="projects-block__slide-title">Текст 3</span><span class="projects-block__slide-label">Приписка</span></span><span
                 class="projects-block__arrow icon-arrow-right"></span></span>
             </a>
           </div>
           <div class="projects-block__slide-wrapper swiper-slide" data-filter="residence">
             <a class="projects-block__slide" href="#">
-              <img alt="" class="projects-block__image" src="img/004.jpg"/>
+              <img alt="" class="projects-block__image" data-src="assets/img/004.jpg"/>
               <span class="projects-block__slide-content"><span class="projects-block__slide-head"><span class="projects-block__slide-title">Текст 4</span><span class="projects-block__slide-label">Приписка</span></span><span
                 class="projects-block__slide-text">Описание (превью)</span><span
                 class="projects-block__arrow icon-arrow-right"></span></span>
@@ -343,7 +258,7 @@
           </div>
           <!-- <div class="projects-block__slide-wrapper swiper-slide" data-filter="building">
             <a class="projects-block__slide" href="#">
-              <img alt="" class="projects-block__image" src="img/project-image-6.jpg"/>
+              <img alt="" class="projects-block__image" data-src="assets/img/project-image-6.jpg"/>
               <span class="projects-block__slide-content"><span class="projects-block__slide-head"><span class="projects-block__slide-title">Текст 5</span><span class="projects-block__slide-label">Приписка</span></span><span
                 class="projects-block__slide-text">Описание (превью)</span><span
                 class="projects-block__arrow icon-arrow-right"></span></span>
@@ -351,7 +266,7 @@
           </div> -->
           <div class="projects-block__slide-wrapper swiper-slide" data-filter="residence">
             <a class="projects-block__slide" href="#">
-              <img alt="" class="projects-block__image" src="img/005.jpg"/>
+              <img alt="" class="projects-block__image" data-src="assets/img/005.jpg"/>
               <span class="projects-block__slide-content"><span class="projects-block__slide-head"><span class="projects-block__slide-title">Текст 6</span><span class="projects-block__slide-label">Приписка</span></span><span
                 class="projects-block__slide-text">Описание (превью)</span><span
                 class="projects-block__arrow icon-arrow-right"></span></span>
@@ -367,7 +282,7 @@
           <div class="col-12 col-lg-4">
             <div class="specialization-block__item">
               
-              <img class="specialization-block__image" src="img/spec1.png" alt=""><!-- <object class="specialization-block__image js-motion-svg" data="assets/img/icon_building.svg" type="image/svg+xml"></object> -->
+              <img class="specialization-block__image" data-src="assets/img/spec1.png" alt=""><!-- <object class="specialization-block__image js-motion-svg" data="assets/assets/img/icon_building.svg" type="image/svg+xml"></object> -->
               <div class="specialization-block__item-title">Операции на рынке вторичного сырья</div>
               <!-- <div class="specialization-block__item-text">Переработка отходов ...
               </div> -->
@@ -377,7 +292,7 @@
           <div class="col-12 col-lg-4">
             <div class="specialization-block__item">
               
-              <img class="specialization-block__image" src="img/spec2.png" alt=""><!-- <object class="specialization-block__image js-motion-svg" data="assets/img/icon_house.svg" type="image/svg+xml"></object> -->
+              <img class="specialization-block__image" data-src="assets/img/spec2.png" alt=""><!-- <object class="specialization-block__image js-motion-svg" data="assets/assets/img/icon_house.svg" type="image/svg+xml"></object> -->
               <div class="specialization-block__item-title">Работаем во всех регионах Казахстана</div>
               <!-- <div class="specialization-block__item-text">Переработка отходов ...
               </div>-->
@@ -387,7 +302,7 @@
           <div class="col-12 col-lg-4">
             <div class="specialization-block__item">
               
-              <img class="specialization-block__image" src="img/spec3.png" alt=""><!-- <object class="specialization-block__image js-motion-svg" data="assets/img/icon_factory.svg" type="image/svg+xml"></object> -->
+              <img class="specialization-block__image" data-src="assets/img/spec3.png" alt=""><!-- <object class="specialization-block__image js-motion-svg" data="assets/assets/img/icon_factory.svg" type="image/svg+xml"></object> -->
               <div class="specialization-block__item-title">Собственная сеть логистики</div>
               <!-- <div class="specialization-block__item-text">Переработка отходов....
               </div> -->
@@ -398,7 +313,7 @@
       </div>
     </div>
     <!-- <div class="parallax-block">
-      <div class="parallax-block__image" data-rellax-percentage="0.5" data-rellax-speed="-3" style="background-image: url('img/video-image.jpg')"></div>
+      <div class="parallax-block__image" data-rellax-percentage="0.5" data-rellax-speed="-3" style="background-image: url('assets/img/video-image.jpg')"></div>
       <div class="container">
         <div class="parallax-block__inner">
           <div class="parallax-block__subtitle heading-smallest">Как мы работаем</div>
@@ -432,7 +347,7 @@
           <div class="articles-block__item">
             <div class="article-item">
               <a class="article-item__image-wrapper" href="#">
-                <img alt="" src="img/007.jpg"/>
+                <img alt="" data-src="assets/img/007.jpg"/>
               </a>
               <a class="article-item__item-title" href="#">Пластмассовая крошка</a>
               <div class="article-item__item-footer">
@@ -444,7 +359,7 @@
           <div class="articles-block__item">
             <div class="article-item">
               <a class="article-item__image-wrapper" href="#">
-                <img alt="" src="img/008.jpg"/>
+                <img alt="" data-src="assets/img/008.jpg"/>
               </a>
               <a class="article-item__item-title" href="#">Пластмассовая крошка</a>
               <div class="article-item__item-footer">
@@ -479,39 +394,39 @@
               <div class="reviews-block__text">«Несколько лет сотрудничаем с компанией «КазВторРесурс». Совместная плодотворная работы привела к росту выпускаемой нами продукции. Отличная логистика компании не допускает срывов в сроках поставки закупленных объемов к нам на предприятие. Рекомендую этих ребят: пунктуальные, обязательные, исполнительные!»</div>
               <div class="reviews-block__person">
                 <div class="reviews-block__person-image">
-                  <img alt="" src="../img/search.png"/>
+                  <img alt="" data-src="../assets/img/search.png"/>
                 </div>
                 <div class="reviews-block__person-data">
                   <div class="reviews-block__person-name">Иван Иванович</div>
                   <div class="reviews-block__person-role">Человек</div>
                 </div>
-                <img alt="" class="reviews-block__quote" src="../img/search.png"/>
+                <img alt="" class="reviews-block__quote" data-src="../assets/img/search.png"/>
               </div>
             </div>
             <!-- <div class="reviews-block__slide swiper-slide">
               <div class="reviews-block__text">I don’t know what else to say, this is something that you haven’t seen before. Unique design, lightweight, and outstanding support.</div>
               <div class="reviews-block__person">
                 <div class="reviews-block__person-image">
-                  <img alt="" src="img/review-image-2.jpg"/>
+                  <img alt="" data-src="assets/img/review-image-2.jpg"/>
                 </div>
                 <div class="reviews-block__person-data">
                   <div class="reviews-block__person-name">Stevie Hoang</div>
                   <div class="reviews-block__person-role">Singer</div>
                 </div>
-                <img alt="" class="reviews-block__quote" src="assets/img/quote.png"/>
+                <img alt="" class="reviews-block__quote" data-src="assets/assets/img/quote.png"/>
               </div>
             </div> -->
             <!-- <div class="reviews-block__slide swiper-slide">
               <div class="reviews-block__text">I don’t know what else to say, this is something that you haven’t seen before. Unique design, lightweight, and outstanding support.</div>
               <div class="reviews-block__person">
                 <div class="reviews-block__person-image">
-                  <img alt="" src="img/review-image-2.jpg"/>
+                  <img alt="" data-src="assets/img/review-image-2.jpg"/>
                 </div>
                 <div class="reviews-block__person-data">
                   <div class="reviews-block__person-name">Stevie Hoang</div>
                   <div class="reviews-block__person-role">Singer</div>
                 </div>
-                <img alt="" class="reviews-block__quote" src="assets/img/quote.png"/>
+                <img alt="" class="reviews-block__quote" data-src="assets/assets/img/quote.png"/>
               </div>
             </div> -->
           </div>
@@ -522,27 +437,27 @@
           <div class="clients__list">
             <div class="clients__item">
               <div class="clients__item-inner">
-                <img alt="" src="img/client-1-dark.png"/>
+                <img alt="" data-src="assets/img/client-1-dark.png"/>
               </div>
             </div>
             <div class="clients__item">
               <div class="clients__item-inner">
-                <img alt="" src="img/client-2-dark.png"/>
+                <img alt="" data-src="assets/img/client-2-dark.png"/>
               </div>
             </div>
             <div class="clients__item">
               <div class="clients__item-inner">
-                <img alt="" src="img/client-3-dark.png"/>
+                <img alt="" data-src="assets/img/client-3-dark.png"/>
               </div>
             </div>
             <div class="clients__item">
               <div class="clients__item-inner">
-                <img alt="" src="img/client-4-dark.png"/>
+                <img alt="" data-src="assets/img/client-4-dark.png"/>
               </div>
             </div>
             <div class="clients__item">
               <div class="clients__item-inner">
-                <img alt="" src="img/client-5-dark.png"/>
+                <img alt="" data-src="assets/img/client-5-dark.png"/>
               </div>
             </div>
           </div>
@@ -550,100 +465,6 @@
       </div> -->
     </div>
   </main>
-  <footer class="footer-default footer">
-    <div class="container">
-      <div class="footer-default__head">
-        <a class="logo" href="/">КазВторРесурс</a>
-      </div>
-      <div class="row">
-        <div class="footer-default__column col-12 col-sm-6 col-md-3 add_col">
-          <div class="footer-default__group-title">Адрес</div>
-          <p>Казахстан</p>
-        
-          <p>г. Караганда</p>
-      
-          <p>ул. Механическая 1/1
-          </p>
-          <p>
-            <a href="mailto:infor@arquito.com">in@kzsr.kz</a>
-          </p>
-          <p>+77051112233</p>
-        </div>
-        <div class="footer-default__column col-12 col-sm-6 col-md-3 menu_col">
-          <div class="footer-default__group-title">Меню</div>
-          <ul class="footer-default__list">
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="#">Мы</a>
-            </li>
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="#">Продукт</a>
-            </li>
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="#">Витрина</a>
-            </li>
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="#">Диалог</a>
-            </li>
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-default__column col-12 col-sm-6 col-md-3 part_col">
-          <div class="footer-default__group-title">Наши партнеры</div>
-          <ul class="footer-default__list">
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="http://trrr.kz/">www.qwmo.net </a>
-              <div class="footer-default-txt">
-                -ТОО «Казахстанский оператор по управлению отходами» - ведущее предприятие по сбору, транспортировке, переработке и утилизации опасных отходов.
-              </div>
-              
-            </li>
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="http://qwmo.kz/">www.trrr.kz</a>
-              <div class="footer-default-txt">
-                -ТОО по сбору и переработке вторичного сырья «RRR Technology»
-              </div>
-              
-            </li>
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="http://rpo.kz/">www.rpo.kz</a>
-              <div class="footer-default-txt">
-                -ТОО «Промотход-сервис» - поставка контейнеров для сбора опасных отходов и вторичного сырья, проектирование контейнерных площадок 
-              </div>
-              
-            </li>
-            <li class="footer-default__list-item">
-              <a class="footer-default__list-link" href="#">www.ecoimpulse.kz</a>
-             <div class="footer-default-txt">
-              -ТОО «Экоимпульс»
-             </div>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-default__column col-12 col-sm-6 col-md-3 social_col">
-          <div class="socials footer-default__socials">
-            <a class="socials__social icofont-facebook" href="#">
-              <div class="visually-hidden">facebook</div>
-            </a>
-            <a class="socials__social icofont-instagram" href="#">
-              <div class="visually-hidden">instagram</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-default__bottom">
-        <div class="footer-default__copyright">© 2020
-          <strong>КазВторРесурс</strong>
-          Все права защищены
-        </div>
-        <!-- <div class="footer-default__author">Design by
-          <a href="#">Logan Cee</a>
-        </div> -->
-      </div>
-    </div>
-  </footer>
-</div>
 <?php include 'foot.php';?>
 </body>
 </html>
